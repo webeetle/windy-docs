@@ -1,0 +1,220 @@
+---
+sidebar_position: 3
+---
+
+# Dropdown
+
+> Dropdowns allow users to take actions, with a simple menu.
+
+```jsx title="Import"
+import { Dropdown } from "@webeetle/windy";
+```
+
+## Contained Dropdown
+
+```jsx live
+<div className="flex w-full justify-center items-center">
+  <Dropdown
+    buttonText="Text Dropdown"
+    layout="contained"
+    options={[
+      {
+        label: "Text With Icon",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+            <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+          </svg>
+        ),
+        className: "hover:bg-indigo-100",
+        handler: () => alert("Clicked"),
+      },
+      {
+        label: "Text",
+        icon: null,
+        handler: () => console.log("Clicked"),
+      },
+    ]}
+  />
+</div>
+```
+
+## Bordered Dropdown
+
+```jsx live
+<div className="flex w-full justify-center items-center">
+  <Dropdown
+    buttonText="Text Dropdown"
+    layout="bordered"
+    options={[
+      {
+        label: "Text With Icon",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+            <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+          </svg>
+        ),
+        className: "hover:bg-indigo-100",
+        handler: () => alert("Clicked"),
+      },
+      {
+        label: "Text",
+        icon: null,
+        handler: () => console.log("Clicked"),
+      },
+    ]}
+  />
+</div>
+```
+
+## Text Dropdown
+
+```jsx live
+<div className="flex w-full justify-center items-center">
+  <Dropdown
+    buttonText="Text Dropdown"
+    layout="text"
+    options={[
+      {
+        label: "Text With Icon",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+            <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+          </svg>
+        ),
+        className: "hover:bg-indigo-100",
+        handler: () => alert("Clicked"),
+      },
+      {
+        label: "Text",
+        icon: null,
+        handler: () => console.log("Clicked"),
+      },
+    ]}
+  />
+</div>
+```
+
+## Custom Dropdown
+
+```jsx live
+<div className="flex w-full justify-center items-center">
+  <Dropdown
+    caret={false}
+    buttonText={
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+        <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+      </svg>
+    }
+    className="text-red-800 text-sm px-2 py-1 bg-gradient-to-l from-red-500 to-yellow-300"
+    options={[
+      {
+        label: "Text With Icon",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+            <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+          </svg>
+        ),
+        className: "hover:bg-indigo-100",
+        handler: () => alert("Clicked"),
+      },
+      {
+        label: "Text",
+        icon: null,
+        handler: () => console.log("Clicked"),
+      },
+    ]}
+  />
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>buttonText</td>
+      <td>string</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>indigo</td>
+    </tr>
+    <tr>
+      <td>layout</td>
+      <td>["text", "bordered", "contained"]</td>
+      <td>contained</td>
+    </tr>
+    <tr>
+      <td>rounded</td>
+      <td>["sm", "md", "lg", "full", "none"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>shadow</td>
+      <td>["sm", "md", "lg", "full", "none"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>caret</td>
+      <td>bool</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>gradient</td>
+      <td>bool</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>

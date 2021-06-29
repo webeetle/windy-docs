@@ -1,0 +1,83 @@
+---
+sidebar_position: 2
+---
+
+# Input
+
+> Input fields let users enter and edit text.
+
+```jsx title="Import"
+import { Checkbox } from "@webeetle/windy";
+```
+
+## Default
+
+```jsx live
+<div className="flex space-x-5 justify-center">
+  <Input type="text" placeholder="input md" />
+  <Input type="text" disabled placeholder="disabled" />
+</div>
+```
+
+## Colors
+
+```jsx live
+<div className="flex space-x-5 justify-center">
+  <Input type="text" color="red" placeholder="input md" />
+  <Input type="text" color="red" disabled placeholder="disabled" />
+</div>
+```
+
+## Size
+
+```jsx live
+<div className="flex-col w-1/4 space-y-5 justify-center">
+  <Input type="text" size="xs" placeholder="input xs" />
+  <Input type="text" size="sm" placeholder="input sm" />
+  <Input type="text" size="md" placeholder="input md" />
+  <Input type="text" size="lg" placeholder="input lg" />
+  <Input type="text" size="xl" placeholder="input xl" />
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>indigo</td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>checked</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>gradient</td>
+      <td>bool</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>shadow</td>
+      <td>bool</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>

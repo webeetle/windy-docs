@@ -1,0 +1,78 @@
+---
+sidebar_position: 3
+---
+
+# Radio
+
+> Radio buttons allow the user to select one option from a set.
+
+```jsx title="Import"
+import { Radio } from "@webeetle/windy";
+```
+
+## Default
+
+```jsx live
+<div className="flex space-x-5">
+  <Radio name="radio1" label="With Label" />
+  <Radio name="radio1" />
+  <Radio disabled name="radio1" label="Disabled" />
+</div>
+```
+
+## Colors
+
+```jsx live
+<div className="md:flex space-x-0 md:space-x-5">
+  <Radio color="gray" name="radio2" label="gray" />
+  <Radio color="red" name="radio2" label="red" />
+  <Radio color="yellow" name="radio2" label="yellow" />
+  <Radio color="green" name="radio2" label="green" />
+  <Radio color="blue" name="radio2" label="blue" />
+  <Radio color="indigo" name="radio2" label="indigo" />
+  <Radio color="purple" name="radio2" label="purple" />
+  <Radio color="pink" name="radio2" label="pink" />
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>indigo</td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>checked</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>gradient</td>
+      <td>bool</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>shadow</td>
+      <td>bool</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
