@@ -34,6 +34,50 @@ import { Button } from "@webeetle/windy";
 </div>
 ```
 
+## Shadows
+
+```jsx live
+<div className="w-full space-x-0 md:space-x-5 space-y-10 md:space-y-0 justify-center items-center">
+  <Button shadow="none" className="justify-center w-full md:w-auto">
+    none
+  </Button>
+  <Button shadow="sm" className="justify-center w-full md:w-auto">
+    sm
+  </Button>
+  <Button shadow="md" className="justify-center w-full md:w-auto">
+    md
+  </Button>
+  <Button shadow="lg" className="justify-center w-full md:w-auto">
+    lg
+  </Button>
+  <Button shadow="xl" className="justify-center w-full md:w-auto">
+    xl
+  </Button>
+</div>
+```
+
+## Sizes
+
+```jsx live
+<div className="w-full space-x-0 md:space-x-5 space-y-10 md:space-y-0 justify-center items-center">
+  <Button size="xs" className="justify-center w-full md:w-auto">
+    xs
+  </Button>
+  <Button size="sm" className="justify-center w-full md:w-auto">
+    sm
+  </Button>
+  <Button size="md" className="justify-center w-full md:w-auto">
+    md
+  </Button>
+  <Button size="lg" className="justify-center w-full md:w-auto">
+    lg
+  </Button>
+  <Button size="xl" className="justify-center w-full md:w-auto">
+    xl
+  </Button>
+</div>
+```
+
 ## Custom Button
 
 ```jsx live
@@ -50,7 +94,7 @@ import { Button } from "@webeetle/windy";
 
 ## Props
 
-<table>
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
   <thead>
     <tr>
       <th>Props</th>
@@ -67,7 +111,8 @@ import { Button } from "@webeetle/windy";
     <tr>
       <td>color</td>
       <td>
-        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple", "pink"]
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
       </td>
       <td>indigo</td>
     </tr>
@@ -75,11 +120,6 @@ import { Button } from "@webeetle/windy";
       <td>layout</td>
       <td>["text", "bordered", "contained"]</td>
       <td>contained</td>
-    </tr>
-    <tr>
-      <td>className</td>
-      <td>string</td>
-      <td>null</td>
     </tr>
     <tr>
       <td>rounded</td>

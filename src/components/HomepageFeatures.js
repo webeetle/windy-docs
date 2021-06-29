@@ -1,45 +1,42 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./HomepageFeatures.module.css";
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Easy to Use",
+    //Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Windy was designed from the ground up to be easily installed and used to
+        get your website up and running quickly.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: "Focus on What Matters",
+    // Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <>Windy lets you focus on your interface. Go ahead and prototype fast!</>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: "Powered by React and Tailwind",
+    //Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Extend or customize your app layout by reusing React. Windly can be
+        extended using Tailwind class!
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4 mb-20 md:mb-0")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        {Svg && <Svg className={styles.featureSvg} alt={title} />}
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -52,7 +49,7 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container mt-5 md:mt-32">
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
