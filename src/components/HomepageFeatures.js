@@ -17,7 +17,7 @@ const FeatureList = [
     title: "Focus on What Matters",
     // Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
     description: (
-      <>Windy lets you focus on your interface. Go ahead and prototype fast!</>
+      <>Windy lets you focus on your UI. Go ahead and prototype fast.</>
     ),
   },
   {
@@ -25,8 +25,8 @@ const FeatureList = [
     //Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
-        Extend or customize your app layout by reusing React. Windly can be
-        extended using Tailwind class!
+        Extend or customize your app layout by reusing Windy's components and
+        Tailwind micro classes.
       </>
     ),
   },
@@ -39,7 +39,7 @@ function Feature({ Svg, title, description }) {
         {Svg && <Svg className={styles.featureSvg} alt={title} />}
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3 className="font-black mb-3">{title}</h3>
         <p>{description}</p>
       </div>
     </div>
