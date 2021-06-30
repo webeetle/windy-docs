@@ -1,0 +1,112 @@
+---
+sidebar_position: 4
+---
+
+# Select
+
+> Select fields let users to select a prefixed option.
+
+```jsx title="Import"
+import { Select } from "@webeetle/windy";
+```
+
+## Default
+
+```jsx live
+<div className="flex space-x-5 justify-center">
+  <div className="w-72">
+    <Select
+      onSelect={({ value }) => console.log(`Selected : ${value}`)}
+      selected={"Tom Cook"}
+      options={[
+        { label: "Wade Cooper", value: "Wade Cooper" },
+        { label: "Arlene Mccoy", value: "Arlene Mccoy" },
+        { label: "Devon Webb", value: "Devon Webb" },
+        { label: "Tom Cook", value: "Tom Cook" },
+        { label: "Tanya Fox", value: "Tanya Fox" },
+        { label: "Hellen Schmidt", value: "Hellen Schmidt" },
+      ]}
+    />
+  </div>
+</div>
+```
+
+## Variants
+
+```jsx live
+<div className="flex space-x-5 justify-center">
+  <div className="w-72">
+    <Select
+      color="blue"
+      onSelect={({ value }) => console.log(`Selected : ${value}`)}
+      selected={"Tom Cook"}
+      options={[
+        { label: "Wade Cooper", value: "Wade Cooper" },
+        { label: "Arlene Mccoy", value: "Arlene Mccoy" },
+        { label: "Devon Webb", value: "Devon Webb" },
+        { label: "Tom Cook", value: "Tom Cook" },
+        { label: "Tanya Fox", value: "Tanya Fox" },
+        { label: "Hellen Schmidt", value: "Hellen Schmidt" },
+      ]}
+    />
+  </div>
+  <div className="w-72">
+    <Select
+      shadow="lg"
+      rounded="full"
+      onSelect={({ value }) => console.log(`Selected : ${value}`)}
+      selected={"Tom Cook"}
+      options={[
+        { label: "Wade Cooper", value: "Wade Cooper" },
+        { label: "Arlene Mccoy", value: "Arlene Mccoy" },
+        { label: "Devon Webb", value: "Devon Webb" },
+        { label: "Tom Cook", value: "Tom Cook" },
+        { label: "Tanya Fox", value: "Tanya Fox" },
+        { label: "Hellen Schmidt", value: "Hellen Schmidt" },
+      ]}
+    />
+  </div>
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>gray</td>
+    </tr>
+    <tr>
+      <td>rounded</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>shadow</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>options</td>
+      <td>array</td>
+      <td>[]</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,156 @@
+---
+sidebar_position: 5
+---
+
+# Modal
+
+> The modal component provides a solid foundation for creating dialogs, popovers, lightboxes, or whatever else.
+
+```jsx title="Import"
+import { Modal } from "@webeetle/windy";
+```
+
+## Default
+
+```jsx live
+function Basic() {
+  const [opened, setOpened] = useState(false);
+
+  function closeModal() {
+    setOpened(false);
+  }
+
+  function openModal() {
+    setOpened(true);
+  }
+
+  return (
+    <div className="flex items-center space-x-5">
+      <div className="flex items-center justify-center">
+        <Button onClick={openModal}>Open dialog</Button>
+      </div>
+      <Modal isOpen={opened} title="A simple Dialog" onClickIcon={closeModal}>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+          non hic molestias vel, excepturi ad accusantium eos necessitatibus
+          neque accusamus pariatur obcaecati assumenda amet, illum alias illo?
+          Delectus, laboriosam quam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Inventore, non hic molestias vel, excepturi ad
+          accusantium eos necessitatibus neque accusamus pariatur obcaecati
+          assumenda amet, illum alias illo? Delectus, laboriosam quam.
+        </div>
+      </Modal>
+    </div>
+  );
+}
+```
+
+## With Actions
+
+```jsx live
+function Actions() {
+  const [opened, setOpened] = useState(false);
+
+  function closeModal() {
+    setOpened(false);
+  }
+
+  function openModal() {
+    setOpened(true);
+  }
+
+  return (
+    <div className="flex items-center space-x-5">
+      <div className="flex items-center justify-center">
+        <Button onClick={openModal}>Open dialog</Button>
+      </div>
+      <Modal
+        isOpen={opened}
+        title="A simple Dialog"
+        onClickIcon={closeModal}
+        actions={[
+          <Button
+            onClick={closeModal}
+            layout="bordered"
+            color="red"
+            rounded="md"
+            className="w-full justify-center"
+          >
+            Nothing
+          </Button>,
+          <Button
+            className="w-full justify-center"
+            onClick={() => alert("Confirmed")}
+            color="green"
+            rounded="md"
+          >
+            Confirm
+          </Button>,
+        ]}
+      >
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+          non hic molestias vel, excepturi ad accusantium eos necessitatibus
+          neque accusamus pariatur obcaecati assumenda amet, illum alias illo?
+          Delectus, laboriosam quam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Inventore, non hic molestias vel, excepturi ad
+          accusantium eos necessitatibus neque accusamus pariatur obcaecati
+          assumenda amet, illum alias illo? Delectus, laboriosam quam.
+        </div>
+      </Modal>
+    </div>
+  );
+}
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>isOpen</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>showCloseButton</td>
+      <td>bool</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>string</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>gray</td>
+    </tr>
+    <tr>
+      <td>rounded</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>actions</td>
+      <td>array</td>
+      <td>[]</td>
+    </tr>
+  </tbody>
+</table>
