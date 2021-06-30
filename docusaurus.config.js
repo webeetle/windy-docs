@@ -17,6 +17,10 @@ module.exports = {
     liveCodeBlock: {
       playgroundPosition: "top",
     },
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: true,
+    },
     navbar: {
       title: "Windy",
       /*logo: {
