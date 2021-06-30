@@ -7,7 +7,7 @@ sidebar_position: 2
 > Input fields let users enter and edit text.
 
 ```jsx title="Import"
-import { Checkbox } from "@webeetle/windy";
+import { Input } from "@webeetle/windy";
 ```
 
 ## Default
@@ -40,6 +40,19 @@ import { Checkbox } from "@webeetle/windy";
 </div>
 ```
 
+## Prefix/Suffix
+
+```jsx live
+<div className="md:flex justify-center space-x-0 md:space-x-5 space-y-5 md:space-y-0 items-center">
+  <div>
+    <Input fullWidth prefix="prefix.com/" type="text" placeholder="Prefix" />
+  </div>
+  <div>
+    <Input fullWidth type="text" suffix="suffix.com" placeholder="Suffix" />
+  </div>
+</div>
+```
+
 ## Props
 
 <table className="max-w-full overflow-x-scroll md:overflow-x-auto">
@@ -52,32 +65,47 @@ import { Checkbox } from "@webeetle/windy";
   </thead>
   <tbody>
     <tr>
+      <td>label</td>
+      <td>string</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td>prefix</td>
+      <td>string</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td>suffix</td>
+      <td>string</td>
+      <td>""</td>
+    </tr>
+    <tr>
       <td>color</td>
       <td>
         [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
         "pink","none"]
       </td>
-      <td>indigo</td>
+      <td>gray</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>rounded</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>shadow</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
     </tr>
     <tr>
       <td>disabled</td>
       <td>bool</td>
       <td>false</td>
-    </tr>
-    <tr>
-      <td>checked</td>
-      <td>bool</td>
-      <td>false</td>
-    </tr>
-    <tr>
-      <td>gradient</td>
-      <td>bool</td>
-      <td>true</td>
-    </tr>
-    <tr>
-      <td>shadow</td>
-      <td>bool</td>
-      <td>true</td>
     </tr>
   </tbody>
 </table>
