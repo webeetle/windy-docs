@@ -27,7 +27,7 @@ module.exports = {
         {
           type: "doc",
           docId: "getting_started/start",
-          position: "left",
+          position: "right",
           label: "Docs",
         },
         {
