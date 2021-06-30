@@ -1,0 +1,77 @@
+---
+sidebar_position: 6
+---
+
+# Panel
+
+> Panel contains other component
+
+```jsx title="Import"
+import { Panel } from "@webeetle/windy";
+```
+
+## Default
+
+```jsx live
+<div className="space-y-5">
+  <Panel className="px-4 py-2 bg-gray-100">
+    <p>Hi, I'm an default panel!</p>
+  </Panel>
+  <Panel layout="error" className="px-4 py-2">
+    <p>Hi, I'm a error panel!</p>
+  </Panel>
+  <Panel layout="warning" className="px-4 py-2">
+    <p>Hi, I'm a warning panel!</p>
+  </Panel>
+  <Panel layout="success" className="px-4 py-2">
+    <p>Hi, I'm a success panel!</p>
+  </Panel>
+  <Panel layout="info" className="px-4 py-2">
+    <p>Hi, I'm a info panel!</p>
+  </Panel>
+</div>
+```
+
+## Card Example
+
+```jsx live
+<Panel layout="paper" className="px-6 py-6">
+  <h2 className="text-2xl font-bold mb-4">Paper Style Panel</h2>
+  <p>
+    Hi, I'm a paper panel!
+    <br />
+    But I am more similiar to an application card!
+  </p>
+  <div className="text-right mt-5">
+    <Button>Dismiss</Button>
+  </div>
+</Panel>
+```
+
+## Dashed Example
+
+```jsx live
+<Panel layout="dashed" className="px-6 py-6">
+  <h2 className="text-2xl font-bold mb-4">Dashed Panel</h2>
+  <p>Hi, I'm a paper panel! Lorem ipsum dolor wst esigua alt emporium est.</p>
+</Panel>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>layout</td>
+      <td>[ "error", "success", "warning", "default", "paper", "dashed",]</td>
+      <td>"default"</td>
+    </tr>
+  </tbody>
+</table>
