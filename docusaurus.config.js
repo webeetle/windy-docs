@@ -9,7 +9,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/windy.svg",
   organizationName: "webeetle", // Usually your GitHub org/user name.
   projectName: "windy", // Usually your repo name.
   plugins: ["@docusaurus/theme-live-codeblock"],
@@ -22,11 +22,11 @@ module.exports = {
       disableSwitch: true,
     },
     navbar: {
-      title: "Windy",
-      /*logo: {
+      title: "windy",
+      logo: {
         alt: "Windy Logo",
-        src: "img/logo.svg",
-      },*/
+        src: "img/windy.svg",
+      },
       items: [
         {
           type: "doc",
@@ -72,7 +72,7 @@ module.exports = {
           ],
         },
       ],*/
-      copyright: `Copyright © ${new Date().getFullYear()} Weebetle`,
+      copyright: `Copyright © ${new Date().getFullYear()} Webeetle`,
     },
     prism: {
       theme: lightCodeTheme,

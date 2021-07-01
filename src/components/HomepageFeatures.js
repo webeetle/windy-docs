@@ -5,7 +5,7 @@ import styles from "./HomepageFeatures.module.css";
 const FeatureList = [
   {
     title: "Easy to Use",
-    //Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("../../static/img/easy-to-use.svg").default,
     description: (
       <>
         Windy was designed from the ground up to be easily installed and used to
@@ -15,14 +15,14 @@ const FeatureList = [
   },
   {
     title: "Focus on What Matters",
-    // Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
+    Svg: require("../../static/img/focus.svg").default,
     description: (
       <>Windy lets you focus on your UI. Go ahead and prototype fast.</>
     ),
   },
   {
     title: "Powered by React and Tailwind",
-    //Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("../../static/img/powered.svg").default,
     description: (
       <>
         Extend or customize your app layout by reusing Windy's components and
@@ -49,7 +49,7 @@ function Feature({ Svg, title, description }) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container mt-5 md:mt-32">
+      <div className="container mt-5">
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
