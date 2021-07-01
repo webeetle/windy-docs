@@ -17,4 +17,4 @@ Only one thing: your project must use React and Tailwind CSS
 npm i @webeetle/windy
 ```
 
-and you are done!
+After you have installated it, you can configure the `WindyProvider`

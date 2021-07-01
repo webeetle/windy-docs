@@ -2015,10 +2015,10 @@
     "@webassemblyjs/ast" "1.11.0"
     "@xtuc/long" "4.2.2"
 
-"@webeetle/windy@^0.5.0":
-  "integrity" "sha512-gqfkXWNWt0thpWiXBSImH6nCxmSpILKe6OeFC/P0EZPQxwsou6SdTqBqIbLysX3CyV6a7/nPEXkuVeD8GZ1eZQ=="
-  "resolved" "https://registry.npmjs.org/@webeetle/windy/-/windy-0.5.0.tgz"
-  "version" "0.5.0"
+"@webeetle/windy@^0.6.0":
+  "integrity" "sha512-kVJFHeDzgvfc/tpz/TWDiyqxzR0/P+uBwyrijXULADpQNVqv+fUTzGYYz0khXRkUXFMGaJSHw3T6/vXsnY245A=="
+  "resolved" "https://registry.npmjs.org/@webeetle/windy/-/windy-0.6.0.tgz"
+  "version" "0.6.0"
   dependencies:
     "@headlessui/react" "^1.3.0"
     "@tailwindcss/forms" "^0.3.3"

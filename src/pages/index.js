@@ -24,9 +24,9 @@ function HomepageHeader() {
         <Link to="/docs/getting_started/start" className="hover:no-underline">
           <Button
             color="green"
+            shadow="xl"
             size="lg"
-            shadow="lg"
-            className="hover:no-underline"
+            className="hover:no-underline pl-5 pr-5 pt-4 pb-4"
           >
             Start with Windy - 3min ⏱️
           </Button>
