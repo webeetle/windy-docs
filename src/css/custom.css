@@ -23,26 +23,20 @@
   .navbar__toggle.clean-btn {
     /*display: none;*/
   }
-  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+  .main-wrapper.docs-wrapper.doc-page aside {
     display: block !important;
   }
-  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module
-    button {
+  .main-wrapper.docs-wrapper.doc-page aside button {
     background-color: #25c2a0;
     top: 10px !important;
     bottom: 94% !important;
     width: 50px;
   }
-  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module
-    button
-    svg,
-  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module
-    button
-    span {
+  .main-wrapper.docs-wrapper.doc-page aside button svg,
+  .main-wrapper.docs-wrapper.doc-page aside button span {
     display: none !important;
   }
-  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module
-    button:after {
+  .main-wrapper.docs-wrapper.doc-page aside button:after {
     position: absolute;
     content: "Docs";
     display: block;
