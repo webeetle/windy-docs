@@ -1,0 +1,58 @@
+---
+sidebar_position: 4
+---
+
+# Loader
+
+> For your loading
+
+```jsx title="Import"
+import { Loader } from "@webeetle/windy";
+```
+
+## Circle
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <div className="w-48  flex items-center justify-center">
+    <Loader type="circle" />
+  </div>
+</div>
+```
+
+## Linear
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <div className="w-96  flex items-center justify-center">
+    <Loader type="linear" />
+  </div>
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>["circle", "linear"]</td>
+      <td>circle</td>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>indigo</td>
+    </tr>
+  </tbody>
+</table>

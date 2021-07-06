@@ -22,6 +22,14 @@
 body {
   font-family: "Nunito", sans-serif !important;
 }
+table {
+  display: table !important;
+  margin-bottom: 0;
+}
+table th,
+table td {
+  border: none;
+}
 
 .navbar {
   box-shadow: none;

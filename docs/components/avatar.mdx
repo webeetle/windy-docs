@@ -1,0 +1,155 @@
+---
+sidebar_position: 1
+---
+
+# Avatar
+
+> Generate an avatar for show the status of ypur users
+
+```jsx title="Import"
+import { Avatar } from "@webeetle/windy";
+```
+
+## Default
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Avatar
+    size="xs"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+  <Avatar
+    size="sm"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+  <Avatar src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" />
+  <Avatar
+    size="lg"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+  <Avatar
+    size="xl"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+</div>
+```
+
+## Text
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Avatar layout="text" text="RT" size="xs" />
+  <Avatar layout="text" text="RT" size="sm" />
+  <Avatar layout="text" text="RT" />
+  <Avatar layout="text" text="RT" size="lg" />
+  <Avatar layout="text" text="RT" size="xl" />
+</div>
+```
+
+## Shadow + Stroke + Rounded
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Avatar
+    stroke="lg"
+    color="green"
+    shadow="md"
+    size="sm"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+  <Avatar
+    stroke="lg"
+    color="red"
+    shadow="xl"
+    size="md"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+  <Avatar
+    stroke="lg"
+    color="blue"
+    shadow="xl"
+    size="md"
+    rounded="md"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+</div>
+```
+
+## Avatar Group
+
+```jsx live
+<div className="flex w-full justify-center items-center">
+  <Avatar
+    stroke="md"
+    color="gray"
+    size="sm"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+  <Avatar
+    stroke="md"
+    color="red"
+    size="sm"
+    className="-ml-5"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+  <Avatar
+    stroke="md"
+    color="green"
+    size="sm"
+    className="-ml-5"
+    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+  />
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>layout</td>
+      <td>["image", "text"]</td>
+      <td>"image"</td>
+    </tr>
+    <tr>
+      <td>text</td>
+      <td>string</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td>src</td>
+      <td>string</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>indigo</td>
+    </tr>
+    <tr>
+      <td>rounded</td>
+      <td>["sm", "md", "lg", "full", "none"]</td>
+      <td>full</td>
+    </tr>
+    <tr>
+      <td>shadow</td>
+      <td>["sm", "md", "lg", "full", "none"]</td>
+      <td>md</td>
+    </tr>
+  </tbody>
+</table>

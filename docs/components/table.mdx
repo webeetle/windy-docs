@@ -1,0 +1,188 @@
+---
+sidebar_position: 7
+title: Table 👨‍🔬
+---
+
+import { Panel } from "@webeetle/windy";
+
+# Table
+
+> Managed Table with filter, ordering and paging
+
+<Panel layout="warning" className="p-4 my-5 font-bold">
+  Warning: This is an experimental Component, this API can may be change in
+  future
+</Panel>
+
+```jsx title="Import"
+import { Table } from "@webeetle/windy";
+```
+
+## Basic
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <div className="w-3/4">
+    <Table
+      columns={[
+        {
+          label: "Custom Column",
+          value: "actions",
+          renderComponent: (row, value) => (
+            <div>
+              {row.data.name} had {row.data.age} years
+            </div>
+          ),
+          ordered: false,
+        },
+        { label: "Name", value: "name", ordered: false },
+        { label: "Surname", value: "surname", ordered: false },
+        { label: "Age", value: "age", ordered: false },
+        { label: "Rank", value: "rank", ordered: false },
+      ]}
+      data={[
+        {
+          name: "John",
+          surname: "Cook",
+          age: "33",
+          rank: "1",
+        },
+        {
+          name: "Mik",
+          surname: "Red",
+          age: "34",
+          rank: "2",
+        },
+        {
+          name: "Nik",
+          surname: "White",
+          age: "35",
+          rank: "3",
+        },
+        {
+          name: "John",
+          surname: "Wick",
+          age: "36",
+          rank: "4",
+        },
+        {
+          name: "Jiik",
+          surname: "Book",
+          age: "36",
+          rank: "4",
+        },
+      ]}
+    />
+  </div>
+</div>
+```
+
+## Filter + Paging + Ordering
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <div className="w-3/4">
+    <Table
+      columns={[
+        {
+          label: "Custom Column",
+          value: "actions",
+          renderComponent: (row, value) => (
+            <div>
+              {row.data.name} had {row.data.age} years
+            </div>
+          ),
+          ordered: false,
+        },
+        { label: "Name", value: "name", ordered: false },
+        { label: "Surname", value: "surname", ordered: true },
+        { label: "Age", value: "age", ordered: true },
+        { label: "Rank", value: "rank", ordered: true },
+      ]}
+      data={[
+        {
+          name: "John",
+          surname: "Cook",
+          age: "33",
+          rank: "1",
+        },
+        {
+          name: "Mik",
+          surname: "Red",
+          age: "34",
+          rank: "2",
+        },
+        {
+          name: "Nik",
+          surname: "White",
+          age: "35",
+          rank: "3",
+        },
+        {
+          name: "John",
+          surname: "Wick",
+          age: "36",
+          rank: "4",
+        },
+        {
+          name: "Jiik",
+          surname: "Book",
+          age: "36",
+          rank: "4",
+        },
+      ]}
+      color="green"
+      paged={true}
+      pageSize={3}
+      search={true}
+    />
+  </div>
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>columns</td>
+      <td>array</td>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <td>data</td>
+      <td>array</td>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <td>search</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>paged</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>pageSize</td>
+      <td>int</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>indigo</td>
+    </tr>
+  </tbody>
+</table>
