@@ -19,6 +19,38 @@
   --ifm-code-font-size: 95%;
 }
 
+@media (max-width: 996px) {
+  .navbar__toggle.clean-btn {
+    /*display: none;*/
+  }
+  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+    display: block !important;
+  }
+  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module
+    button {
+    background-color: #25c2a0;
+    top: 10px !important;
+    bottom: 94% !important;
+    width: 50px;
+  }
+  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module
+    button
+    svg,
+  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module
+    button
+    span {
+    display: none !important;
+  }
+  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module
+    button:after {
+    position: absolute;
+    content: "Docs";
+    display: block;
+    top: 10px;
+    left: 10px;
+  }
+}
+
 body {
   font-family: "Nunito", sans-serif !important;
 }

@@ -14,6 +14,7 @@ module.exports = {
   projectName: "windy", // Usually your repo name.
   plugins: ["@docusaurus/theme-live-codeblock"],
   themeConfig: {
+    hideableSidebar: true,
     liveCodeBlock: {
       playgroundPosition: "top",
     },
@@ -22,6 +23,7 @@ module.exports = {
       disableSwitch: true,
     },
     navbar: {
+      hideOnScroll: true,
       title: "windy",
       logo: {
         alt: "Windy Logo",
