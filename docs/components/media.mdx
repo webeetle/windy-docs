@@ -1,0 +1,208 @@
+---
+sidebar_position: 5
+---
+
+# Media
+
+> Generate a Media component useful for cards, panels and chat
+
+```jsx title="Import"
+import { Media } from "@webeetle/windy";
+```
+
+## Default
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Media
+    src={
+      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    }
+  >
+    <h4 className="text-lg font-bold">Lorem ipsum</h4>
+    <p className="mt-1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
+      dapibus massa.
+    </p>
+  </Media>
+</div>
+```
+
+## With Components
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Media media={<Button>Button</Button>}>
+    <h4 className="text-lg font-bold">Lorem ipsum</h4>
+    <p className="mt-1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
+      dapibus massa.
+    </p>
+  </Media>
+  <Media align="center" media={<Button>Button</Button>}>
+    <h4 className="text-lg font-bold">Lorem ipsum</h4>
+    <p className="mt-1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
+      dapibus massa.
+    </p>
+  </Media>
+  <Media align="end" media={<Button>Button</Button>}>
+    <h4 className="text-lg font-bold">Lorem ipsum</h4>
+    <p className="mt-1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
+      dapibus massa.
+    </p>
+  </Media>
+</div>
+```
+
+## Size
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Media
+    size="xl"
+    src={
+      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    }
+  >
+    <h4 className="text-lg font-bold">Lorem ipsum</h4>
+    <p className="mt-1">Lorem ipsum dolor sit amet</p>
+  </Media>
+</div>
+```
+
+## Rounded
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Media
+    rounded="full"
+    src={
+      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    }
+  >
+    <h4 className="text-lg font-bold">Lorem ipsum</h4>
+    <p className="mt-1">Lorem ipsum dolor sit amet</p>
+  </Media>
+</div>
+```
+
+## Stretched
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Media
+    align={"center"}
+    sizeToFit
+    rounded
+    src={
+      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    }
+  >
+    <h4 className="text-lg font-bold">Lorem ipsum</h4>
+    <p className="mt-1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
+      dapibus massa. Phasellus nec porta sapien. Proin tempus velit neque, quis
+      blandit nulla bibendum sit amet. Vestibulum faucibus justo ac felis
+      varius, ut pulvinar leo malesuada. Vivamus sed odio tempus nulla
+      ullamcorper tempor a at odio. Donec eu diam aliquam, pulvinar orci
+      facilisis, vestibulum magna.
+    </p>
+  </Media>
+</div>
+```
+
+## Nested
+
+```jsx live
+<div className="flex w-full space-x-5 justify-center items-center">
+  <Media
+    src={
+      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    }
+  >
+    <h4 className="text-lg font-bold">Lorem ipsum</h4>
+    <p className="mt-1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
+      dapibus massa. Phasellus nec porta sapien. Proin tempus velit neque, quis
+      blandit nulla bibendum sit amet. Vestibulum faucibus justo ac felis
+      varius, ut pulvinar leo malesuada. Vivamus sed odio tempus nulla
+      ullamcorper tempor a at odio. Donec eu diam aliquam, pulvinar orci
+      facilisis, vestibulum magna.
+    </p>
+    <Media
+      src={
+        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      }
+    >
+      <h4 className="text-lg font-bold">Lorem ipsum</h4>
+      <p className="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
+        dapibus massa.
+      </p>
+    </Media>
+    <Media
+      src={
+        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      }
+    >
+      <h4 className="text-lg font-bold">Lorem ipsum</h4>
+      <p className="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
+        dapibus massa. Phasellus nec porta sapien. Proin tempus velit neque,
+        quis blandit nulla bibendum sit amet.
+      </p>
+    </Media>
+  </Media>
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>src</td>
+      <td>string</td>
+      <td>null</td>
+    </tr>
+    <tr>
+      <td>media</td>
+      <td>node</td>
+      <td>null</td>
+    </tr>
+    <tr>
+      <td>sizeToFit</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>["xs", "sm", "md", "lg", "xl"]</td>
+      <td>md</td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td>["start", "end"]</td>
+      <td>start</td>
+    </tr>
+    <tr>
+      <td>align</td>
+      <td>["center", "start", "end"]</td>
+      <td>start</td>
+    </tr>
+    <tr>
+      <td>rounded</td>
+      <td>["sm", "md", "lg", "full", "none"]</td>
+      <td>full</td>
+    </tr>
+  </tbody>
+</table>
