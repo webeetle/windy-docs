@@ -1,0 +1,65 @@
+---
+sidebar_position: 7
+---
+
+# Skeleton
+
+> Generate skeleton for async actions
+
+```jsx title="Import"
+import { Skeleton } from "@webeetle/windy";
+```
+
+## Basic
+
+```jsx live
+<div className="w-30 md:w-96">
+  <Skeleton />
+</div>
+```
+
+## Paragraph
+
+```jsx live
+<div className="w-30 md:w-96">
+  <Skeleton className="w-3/4 mb-3" />
+  <Skeleton className="mb-3" />
+  <Skeleton className="w-1/2" />
+</div>
+```
+
+## Media Skeleton Example
+
+```jsx live
+<div className="w-30 md:w-96">
+  <Media media={<Skeleton className="h-16 w-16" />}>
+    <div className="w-30 md:w-96 mt-3 md:mt-0">
+      <Skeleton color="green" className="w-3/4 mb-3" />
+      <Skeleton className="mb-3" />
+      <Skeleton className="w-1/2" />
+    </div>
+  </Media>
+</div>
+```
+
+## Props
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>indigo</td>
+    </tr>
+  </tbody>
+</table>
