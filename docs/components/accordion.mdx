@@ -1,0 +1,139 @@
+---
+sidebar_position: 1
+---
+
+# Accordion
+
+> Generate an accordion element
+
+```jsx title="Import"
+import { Accordion } from "@webeetle/windy";
+```
+
+## Default
+
+```jsx live
+<div className="w-full">
+  <Accordion>
+    <Accordion.Panel label="Panel 1">Hello From Windy 1</Accordion.Panel>
+    <Accordion.Panel label="Panel 2">Hello From Windy 2</Accordion.Panel>
+    <Accordion.Panel label="Panel 3">Hello From Windy 3</Accordion.Panel>
+  </Accordion>
+</div>
+```
+
+## Disable Panel
+
+```jsx live
+<div className="w-full">
+  <Accordion>
+    <Accordion.Panel label="Panel 1">Hello From Windy 1</Accordion.Panel>
+    <Accordion.Panel label="Panel 2" disabled>
+      Hello From Windy 2
+    </Accordion.Panel>
+    <Accordion.Panel label="Panel 3">Hello From Windy 3</Accordion.Panel>
+  </Accordion>
+</div>
+```
+
+## Custom
+
+```jsx live
+<div className="w-full">
+  <Accordion className="bg-white">
+    <Accordion.Panel className="bg-indigo-500 text-white" label="Panel 1">
+      Hello From Windy 1
+    </Accordion.Panel>
+    <Accordion.Panel className="bg-indigo-500 text-white" label="Panel 2">
+      Hello From Windy 2
+    </Accordion.Panel>
+    <Accordion.Panel className="bg-indigo-500 text-white" label="Panel 3">
+      Hello From Windy 3
+    </Accordion.Panel>
+  </Accordion>
+</div>
+```
+
+## On Click Panel
+
+```jsx live
+<div className="w-full">
+  <Accordion className="bg-blue-200">
+    <Accordion.Panel className="bg-blue-400 text-white" label="Panel 1">
+      Hello From Windy 1
+    </Accordion.Panel>
+    <Accordion.Panel
+      isOpen={true}
+      onClick={() => alert("clicked")}
+      className="bg-blue-600 text-white"
+      label="Click Me!"
+    >
+      Hello From Windy 2
+    </Accordion.Panel>
+    <Accordion.Panel className="bg-blue-800 text-white" label="Panel 3">
+      Hello From Windy 3
+    </Accordion.Panel>
+  </Accordion>
+</div>
+```
+
+## Props Accordion
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>color</td>
+      <td>
+        [ "gray", "red", "yellow", "green", "blue", "indigo", "purple",
+        "pink","none"]
+      </td>
+      <td>indigo</td>
+    </tr>
+    <tr>
+      <td>rounded</td>
+      <td>["sm", "md", "lg", "full", "none"]</td>
+      <td>full</td>
+    </tr>
+    <tr>
+      <td>shadow</td>
+      <td>["sm", "md", "lg", "full", "none"]</td>
+      <td>md</td>
+    </tr>
+  </tbody>
+</table>
+
+## Props Accordion.Panel
+
+<table className="max-w-full overflow-x-scroll md:overflow-x-auto">
+  <thead>
+    <tr>
+      <th>Props</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>label</td>
+      <td>any</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td>isOpen</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>bool</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
